@@ -1,0 +1,257 @@
+/* Basic styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #21266a;
+    color: #ffffff;
+    scroll-behavior: smooth;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+  
+html {
+    box-sizing: border-box;
+    }
+    *, *:before, *:after {
+    box-sizing: inherit;
+    }
+
+header {
+    background: transparent;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+.nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+.nav-links li {
+    margin-left: 1.5rem;
+  }
+  
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+.nav-links a:hover {
+    color: #ff4081;
+  }
+  
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+#bg-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+  }
+  
+.aurora {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  
+.aurora-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+.aurora-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+.btn {
+    background: #405dff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+.btn:hover {
+    background: #051c79;
+  }
+  
+section {
+    padding: 4rem ;
+    
+  }
+  
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+.about, .contact {
+    text-align: center;
+  }
+  
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.contact input, .contact textarea {
+    width: 30%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+.contact button {
+    background: #ff4081;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+.contact button:hover {
+    background: #e91e63;
+  }
+  
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+.card {
+    background: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+.card h3 {
+    margin-bottom: 1rem;
+  }
+  
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+footer ul li {
+    display: inline;
+    margin: 0 1rem;
+  }
+  
+footer ul li img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .aurora-content h1 {
+      font-size: 2rem;
+    }
+  
+    .aurora-content p {
+      font-size: 1rem;
+    }
+  
+    .btn {
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aurora-content h1 {
+      font-size: 1.5rem;
+    }
+  
+    .aurora-content p {
+      font-size: 0.875rem;
+    }
+  
+    .btn {
+      padding: 0.5rem 0.75rem;
+    }
+  
+    .gallery-item img {
+      border-radius: 5px;
+    }
+  }
+  
