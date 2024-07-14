@@ -222,7 +222,7 @@ p{
 .service-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 0.9fr));
-    gap: 4rem;
+    gap: 2rem;
     margin: 10px;
    
   }
